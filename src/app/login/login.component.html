@@ -1,18 +1,18 @@
 <div class="container w-50 mt-4">
     <h2 class="text-center mt-5" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(33, 1, 36);">{{data}}</h2>
     <!-- string interpollation -->
-    <form action="" class="p-3 mt-4" style="border-radius: 30px; background-color: rgba(201, 144, 252, 0.301); box-shadow: 2px 15px 50px rgb(53, 21, 83);">
+    <form action="" (ngSubmit)="login()" class="p-3 mt-4" style="border-radius: 30px; background-color: rgba(201, 144, 252, 0.301); box-shadow: 2px 15px 50px rgb(53, 21, 83);">
         <div class="mt-2 p-3"  >
             <label for="acid" style="font-weight: 540; font-size: 18px; color: rgb(45, 24, 65); margin-bottom: 5px;">Account Number</label>
-            <input [(ngModel)]="acno" type="text" id="acid" name="acnum1" class="form-control">
+            <input [(ngModel)]="acno" type="text" id="acid" name="acnum1" class="form-control" style="font-weight: 550; font-size: 17px;">
             
         </div>
         <div class="p-3" >
             <label for="psw1" style="font-weight: 540; font-size: 18px; color: rgb(48, 20, 73); margin-bottom: 8px;">Password</label>
-            <input [(ngModel)]="psw" type="password" id="psw1" name="paswrd1" class="form-control">
+            <input [(ngModel)]="psw" type="password" id="psw1" name="paswrd1" class="form-control" style="font-weight: 550; font-size: 17px;">
         </div>
         <div class="mt-2  text-center" >
-            <button type="button" (click)="login()"  class="btn btn-primary" style="font-size: 18px;">login</button>
+            <button type="submit" class="btn btn-primary" style="font-size: 18px;">login</button>
             <!-- event binding -->
             
         </div>

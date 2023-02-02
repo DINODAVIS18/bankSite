@@ -1,9 +1,16 @@
 <div class="container w-50">
-    <div class="p-4 text-center" style="margin-top: 100px ; border-radius: 30px; background-color: rgba(192, 145, 253, 0.521); box-shadow: 2px 15px 50px rgb(53, 21, 83);">
-        <h1 class="text-center mt-2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(33, 1, 36);">Registration Form</h1>
-        <input placeholder="Enter Acno" id="acid" name="acnum1" type="text" class="form-control mt-4 " style="font-weight: 500; font-size: 18px;">
-        <input placeholder="Enter Username" id="unamid" name="usern1" type="text" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
-        <input placeholder="Enter Password" id="psw1" name="paswrd1" type="text" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
-        <button type="button" (click)="register()" class="btn btn-primary mt-4">Register</button>
-    </div>
+<form action="" (ngSubmit)="register()">
+        <div class="p-4 text-center" style="margin-top: 100px ; border-radius: 30px; background-color: rgba(192, 145, 253, 0.521); box-shadow: 2px 15px 50px rgb(53, 21, 83);">
+            
+            <h1 class="text-center mt-2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(33, 1, 36);">Registration Form</h1>
+            
+            <input placeholder="Enter Username" [(ngModel)]="uname" id="unamid" name="usern1" type="text" class="form-control mt-4" style="font-weight: 500; font-size: 18px;">
+            
+            <input placeholder="Enter Account.no" [(ngModel)]="acno" id="acid" name="acnum1" type="text" class="form-control mt-3 " style="font-weight: 500; font-size: 18px;">
+            
+            <input placeholder="Enter Password" [(ngModel)]="psw" id="psw1" name="paswrd1" type="text" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
+            
+            <button type="submit" class="btn btn-primary mt-4">Register</button>
+        </div>
+</form>
 </div>
