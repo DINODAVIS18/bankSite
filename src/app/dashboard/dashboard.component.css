@@ -5,3 +5,15 @@ h1{
     font-family:sans-serif;
     
 }
+#trans1{
+    background-color:rgba(62, 25, 110, 0.521); ;
+}
+a{
+    color:rgb(242, 228, 243) ;
+   
+}
+a:hover{
+    color:rgb(243, 227, 9); ;
+  
+}
+

@@ -1,0 +1,21 @@
+<div class="text-center p-5 w-50 container fs-5 mt-5" style="color: rgb(32, 3, 59); ">
+    <h2>Transaction History</h2>
+    <hr>
+    <table class="w-100  w-50 p-5 mt-4 text-white" style= " height: 10rem; border-radius: 10px; background-color: rgba(192, 145, 253, 0.521); box-shadow: 2px 15px 50px rgb(53, 21, 83); ">
+        <thead >
+            <tr class="text-center p-5 mb-5 " style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(226, 229, 233);  background-color: rgb(53, 21, 83); ">
+                <th>Type</th>
+                <th>Amount</th>
+            </tr>
+
+        </thead>
+        <tbody  *ngFor="let i of transactionData" >
+           <tr>
+                <td style="color: rgb(32, 3, 59);font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;font-size: 23px;">{{i.Type}}</td>
+                <td   style="color: rgb(0, 45, 168);font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600; font-size: 21px;">{{i.amount}}</td>
+           </tr>
+        </tbody>
+    </table>
+   <div style="margin-top: 40px;"></div>
+   <hr>
+</div>

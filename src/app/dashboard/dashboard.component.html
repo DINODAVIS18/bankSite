@@ -1,1 +1,45 @@
-<h1 class="mt-4">Welcome {{user}}</h1>
+<h1 class="mt-2" style="text-decoration: underline;">Welcome {{user}}</h1>
+
+<div id="trans1"  class="container p-2 w-25 rounded-pill text-center " >
+    <a style="text-decoration: none;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;" routerLink="/transaction">View Transaction History</a>
+</div>
+
+<div class="container ">
+        <div class="row m-2">
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <div class="card text-center" style="width: 20rem; height: 23rem; border: none; margin-left: 100px;  margin-top: 25px; border-radius: 30px; background-color: rgba(192, 145, 253, 0.521); box-shadow: 2px 15px 50px rgb(53, 21, 83);">
+                    <div class="card-body mt-1 ">
+                        <form action="">                            
+                                <h1 class="text-center mt-2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(33, 1, 36);">Deposit</h1>
+                                                            
+                                <input placeholder="Enter Account.no" [(ngModel)]="acno" id="acid1" name="acnum1" type="text" class="form-control mt-4 " style="font-weight: 500; font-size: 18px;">
+                                
+                                <input placeholder="Enter Password" [(ngModel)]="psw" id="psw1" name="paswrd1" type="password" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
+    
+                                <input placeholder="Amount" id="amouid" [(ngModel)]="amnt" name="amnt1" type="text" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
+    
+                                <button type="button" (click)="deposit()" class="btn btn-warning mt-4">Deposit</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card text-center" style="width: 20rem; height: 23rem; border: none; margin-left: 100px; margin-top: 25px; border-radius: 30px; background-color: rgba(192, 145, 253, 0.521); box-shadow: 2px 15px 50px rgb(53, 21, 83);">
+                    <div class="card-body mt-1">
+                        <form action="">                            
+                                <h1 class="text-center mt-2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(33, 1, 36);">Withdraw</h1>
+                                                            
+                                <input placeholder="Enter Account.no" [(ngModel)]="acno1" id="acid2" name="acnum2" type="text" class="form-control mt-4 " style="font-weight: 500; font-size: 18px;">
+                                
+                                <input placeholder="Enter Password" [(ngModel)]="psw1" id="psw2" name="paswrd2" type="password" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
+    
+                                <input placeholder="Amount" [(ngModel)]="amnt1" id="amouid1" name="amnt2" type="text" class="form-control mt-3" style="font-weight: 500; font-size: 18px;">
+    
+                                <button type="button" (click)="withdraw()" class="btn btn-warning mt-4">Withdraw</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
